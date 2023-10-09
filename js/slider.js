@@ -38,7 +38,7 @@
         sliders[value - 1].classList.add('testimony_body--show');
     }
     
-    setInterval(autoChangeSlider, 5000);
+    setInterval(autoChangeSlider, 8000);
     
 })();
 
