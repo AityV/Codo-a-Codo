@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../css/contact.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+	<body>
+		<nav id="navbar" class="nav container">
+			<div class="nav_logo">
+				<h2 class="nav_title">Pagina Prueba</h2>
+			</div>
+
+			<ul class="nav_link nav_link--menu">
+				<li class="nav_items">
+					<a href="#" class="nav_links">Inicio</a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links">Acerca de</a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links">Intereses</a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links">Contacto</a>
+				</li>
+
+				<img
+					src="/svg/close.svg"
+					alt="boton cerrar"
+					class="nav_close"
+				/>
+			</ul>
+
+			<div class="nav_menu">
+				<img src="/svg/menu.svg" alt="boton menu" class="nav_img" />
+			</div>
+		</nav>
+		<main id="contact">
+			<section id="form_container">
+				<form id="form">
+					<div class="input_container">
+						<label for="firstname">Nombre</label>
+						<input
+							class="input_form"
+							id="firstname"
+							name="firstname"
+							type="text"
+							placeholder="Ingrese su nombre"
+						/>
+					</div>
+					<div class="input_container">
+						<label for="surname">Apellido</label>
+						<input
+							class="input_form"
+							id="surname"
+							name="surname"
+							type="text"
+							placeholder="Ingrese su apellido"
+						/>
+					</div>
+					<div class="input_container">
+						<label for="email">Email</label>
+						<input
+							class="input_form"
+							id="email"
+							name="email"
+							type="email"
+							placeholder="Ingrese su email"
+						/>
+					</div>
+					<div class="input_container">
+						<label for="tel">Telefono</label>
+						<input
+							class="input_form"
+							id="tel"
+							name="tel"
+							type="tel"
+							placeholder="Ingrese su telefono"
+						/>
+					</div>
+				</form>
+				<input id="submit_button" type="submit" value="Enviar" />
+			</section>
+		</main>
+		<script src="../js/contact.js"></script>
+	</body>
+</html>
