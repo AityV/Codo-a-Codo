@@ -51,6 +51,15 @@ body {
     align-items: center;
 }
 
+.nav_logo img {
+    max-width: 160px;
+    display: block;
+    align-content: center;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+}
+
 .nav_title {
     font-weight: 300;
 }
