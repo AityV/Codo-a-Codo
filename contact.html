@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto</title>
+		<link rel="shortcut icon" href="img/logotype.png" type="image/x-icon">
+    	<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/index.css">>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+
+	<body>
+		<nav id="navbar" class="nav container">
+			<div class="nav_logo">
+                <img src="img/Logotype-white.png" alt="logotype-white">                
+            </div> 
+
+			<ul class="nav_link nav_link--menu">
+				<li class="nav_items">
+					<a href="/index.html" class="nav_links">Inicio</a>
+				</li>
+				<li class="nav_items">
+					<a href="/destinations.htmlZ" class="nav_links">Destinos</a>
+				</li>
+				<li class="nav_items">
+					<a href="/packages.html" class="nav_links">Paquetes y Ofertas</a>
+				</li>
+				<li class="nav_items">
+					<a href="#" class="nav_links">Contacto</a>
+				</li>
+
+				<img
+					src="/svg/close.svg"
+					alt="boton cerrar"
+					class="nav_close"
+				/>
+			</ul>
+
+			<div class="nav_menu">
+				<img src="/svg/menu.svg" alt="boton menu" class="nav_img" />
+			</div>
+		</nav>
+
+		<section class="form_subt">
+			<p>Si tenes alguna duda o consulta, no dudes en ponerte en contacto con nosotros. Estamos aca para responder a todas tus preguntas y brindarte la información que necesitas para planificar tu próximo viaje. Ya sea que desees obtener detalles sobre nuestros paquetes turísticos, necesites asesoramiento sobre destinos o tengas cualquier otra inquietud.</p>
+		</section>
+
+		<main id="contact">
+			<section id="form_container">
+				<form id="form">
+					<div class="input_container">
+						<label for="firstname">Nombre</label>
+						<input
+							class="input_form"
+							id="firstname"
+							name="firstname"
+							type="text"
+							placeholder="Ingrese su nombre"
+						/>
+					</div>
+					<div class="input_container">
+						<label for="surname">Apellido</label>
+						<input
+							class="input_form"
+							id="surname"
+							name="surname"
+							type="text"
+							placeholder="Ingrese su apellido"
+						/>
+					</div>
+					<div class="input_container">
+						<label for="email">Email</label>
+						<input
+							class="input_form"
+							id="email"
+							name="email"
+							type="email"
+							placeholder="Ingrese su email"
+						/>
+					</div>
+					<div class="input_container">
+						<label for="tel">Telefono</label>
+						<input
+							class="input_form"
+							id="tel"
+							name="tel"
+							type="tel"
+							placeholder="Ingrese su telefono"
+						/>
+					</div>
+
+					<input id="submit_button" type="submit" value="Enviar" />
+				</form>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<section class="footer_container container">
+				<nav class="nav nav--footer">
+					<h2 class="footer_title">Antártico Viajes</h2>
+					
+					<ul class="nav_link nav_link--footer">
+						<li class="nav_items">
+							<a href="index.html" class="nav_links">Inicio</a>
+						</li>
+						<li class="nav_items">
+							<a href="/destinations.html" class="nav_links">Destinos</a>
+						</li>
+						<li class="nav_items">
+							<a href="packages.html" class="nav_links">Paquetes y Ofertas</a>
+						</li>
+						<li class="nav_items">
+							<a href="contact.html" class="nav_links">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+	
+				<form class="footer_form">
+					<h2 class="footer_newsletter">Suscribite al newsletter</h2>
+					<div class="footer_inputs">
+						<input type="email" placeholder="Email:" class="footer_input">
+						<input type="submit" value="Suscribite" class="footer_submit">
+					</div>
+				</form>
+			</section>
+	
+			<section class="footer_copy container">
+				<div class="footer_social">
+					<a href="#" class="footer_icons"><i class="fa-brands fa-instagram footer_img"></i></a>
+					<a href="#" class="footer_icons"><i class="fa-brands fa-facebook footer_img"></i></a>
+				</div>
+	
+				<!-- Utilizacion de Font Awesome -->
+	
+				<h3 class="footer_copyright">Derechos reservados &copy; Antártico Viajes</h3>
+			</section>
+		</footer>
+
+		<script src="js/menu.js"></script>
+		<script src="/js/contact.js"></script>
+	</body>
+</html>
