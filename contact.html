@@ -8,7 +8,10 @@
     	<link rel="stylesheet" href="/css/normalize.css">
 		<link rel="stylesheet" href="css/contact.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+        <script src="js/api.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7pQ2MMwCv9LzxPcBdfXWLWnN919NNHrA&callback=initMap" async defer></script>
+
+    </head>
 <body class="hero">
     <header>
         <nav class="nav container">
@@ -114,13 +117,7 @@
                 </ul>
             </nav>
 
-            <form class="footer_form">
-                <h2 class="footer_newsletter">Suscribite al newsletter</h2>
-                <div class="footer_inputs">
-                    <input type="email" placeholder="Email:" class="footer_input">
-                    <input type="submit" value="Suscribite" class="footer_submit">
-                </div>
-            </form>
+            <div id="map"></div>
         </section>
 
         <section class="footer_copy container">

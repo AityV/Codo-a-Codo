@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: 100vh;
     min-height: 600px;
-    max-height: 800px;
+    /* max-height: 800px; */
     position: relative;
     display: grid;
     grid-template-rows:100px 1fr;
@@ -106,7 +106,7 @@ body {
 .form_subt {
 	overflow: hidden;
 	width: 70%;
-	margin: 100px auto 40px auto;
+	margin: 100px auto 50px auto;
     display: flex;
     padding-top: 10px;
     backdrop-filter: blur(20px);
@@ -120,6 +120,7 @@ body {
 	align-items: center;
 	text-align: center;
     padding: 20px;
+    font-size: 0.9rem;
 }
 
 #contact {
@@ -138,7 +139,7 @@ body {
 	/* grid-template-rows: auto auto; */
 	gap: 10px;
 	width: 70%;
-	margin: 0 auto 30px;
+	margin: 0 auto 20px;
 }
 
 label {
@@ -147,10 +148,10 @@ label {
 
 input.input_form {
 	background-color: #fff;
-	height: 50px;
+	height: 40px;
 	padding-left: 10px;
 	border-radius: 6px;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	outline: none;
 	border: none;
 	flex-grow: 1;
@@ -186,7 +187,7 @@ input#submit_button {
     margin-bottom: 30px;
 }
 
-.footer_title, .footer_newsletter {
+.footer_title{
     color: #fff;
 }
 
@@ -196,6 +197,7 @@ input#submit_button {
     align-items: center;
     border-bottom: 1px solid #fff;
     padding-bottom: 60px;
+    padding-top: 25px;
 }
 
 .nav--footer {
@@ -213,35 +215,12 @@ input#submit_button {
     flex-wrap: wrap;
 }
 
-.footer_inputs {
+#map {
+    width: 40%;
+    height: 300px;
     margin-top: 10px;
     display: flex;
     overflow: hidden;   
-}
-
-.footer_input {
-    background-color: #fff;
-    height: 50px;
-    display: block;
-    padding-left: 10px;
-    border-radius: 6px;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    margin-right: 16px;
-}
-
-.footer_submit {
-    margin-left: auto;
-    display: inline-block;
-    height: 50px;
-    padding: 0 20px;
-    background-color: #2091f9;
-    border: none;
-    font-size: 1rem;
-    color: #fff;
-    border-radius: 6px;
-    cursor: pointer;
 }
 
 .footer_copy {
@@ -308,7 +287,14 @@ input#submit_button {
     }
 
 	.footer_container {
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    #map{
+        width: 70%;
+        height: 200px;
     }
 
     .nav--footer {
@@ -326,15 +312,16 @@ input#submit_button {
         width: 100%;
         justify-content: space-evenly;
     }
-
-    .footer_input {
-        flex: 1;
-    }
 	
 	#form {
 		flex-direction: column;
-        gap: 20px;
+        gap: 10px;
 	}
+
+    .form_subt{
+        margin: 70px auto 20px ;
+    }
+
     div.input_container {
         width: 100%;
     }
@@ -345,9 +332,14 @@ input#submit_button {
 }
 
 @media (max-width: 600px) {
-	.footer_title {
+	.nav_logo img{
+        max-width: 140px;
+    }
+    
+    .footer_title {
         justify-self: start;
         margin-bottom: 15px;
+        font-size: 1.5rem;
     }
 
     .nav--footer {
@@ -359,19 +351,40 @@ input#submit_button {
         gap: 1em;
     }
 
-    .footer_inputs {
-        flex-wrap: wrap;
+    #form{
+       width: 100%;
+       grid-template-rows: 1fr;
+       margin-bottom: 10px;
     }
 
-    .footer_input {
-        flex-basis: 100%;
-        margin: 0;
-        margin-bottom: 16px;
+    label {
+        text-align: center;
     }
 
-    .footer_submit {
-        margin-right: auto;
+    input.input_form{
+        align-items: center;
+        text-align: center;
     }
+
+    div.input_container{
+        width: 80%;
+        justify-content: center;
+        margin: 0 auto 0 auto;
+    }
+
+    .form_subt p{
+        font-size: 0.7rem;
+        padding-bottom: 35px;
+        padding: 15px;
+    }
+
+    input#submit_button{
+        height: 35px;
+        font-size: 0.9rem;
+        width: 70%;
+        margin: 0 auto 0 auto;
+    }
+
 }
 
 /* Scrollbar */
