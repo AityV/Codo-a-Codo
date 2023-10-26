@@ -21,13 +21,13 @@
 
             <ul class="nav_link nav_link--menu">
                 <li class="nav_items">
-                    <a href="/index.html" class="nav_links">Inicio</a>
+                    <a href="/index.html" class="nav_links" target="_blank">Inicio</a>
                 </li>
                 <li class="nav_items">
-                    <a href="/destinations.html" class="nav_links">Destinos</a>
+                    <a href="/destinations.html" class="nav_links" target="_blank">Destinos</a>
                 </li>
                 <li class="nav_items">
-                    <a href="/packages.html" class="nav_links">Paquetes y Ofertas</a>
+                    <a href="/packages.html" class="nav_links" target="_blank">Paquetes y Ofertas</a>
                 </li>
                 <li class="nav_items">
                     <a href="/contact.html" class="nav_links">Contacto</a>
@@ -59,6 +59,7 @@
                         type="text"
                         placeholder="Ingrese su nombre"
                     />
+                    <span id="firstnameError" class="error"></span>
                 </div>
                 <div class="input_container">
                     <label for="surname">Apellido</label>
@@ -69,6 +70,7 @@
                         type="text"
                         placeholder="Ingrese su apellido"
                     />
+                    <span id="surnameError" class="error"></span>
                 </div>
                 <div class="input_container">
                     <label for="email">Email</label>
@@ -79,6 +81,7 @@
                         type="email"
                         placeholder="Ingrese su email"
                     />
+                    <span id="emailError" class="error"></span>
                 </div>
                 <div class="input_container">
                     <label for="tel">Telefono</label>
@@ -89,6 +92,7 @@
                         type="tel"
                         placeholder="Ingrese su telefono"
                     />
+                    <span id="telError" class="error"></span>
                 </div>
 
                 <input id="submit_button" type="submit" value="Enviar" />
@@ -103,13 +107,13 @@
                 
                 <ul class="nav_link nav_link--footer">
                     <li class="nav_items">
-                        <a href="/index.html" class="nav_links">Inicio</a>
+                        <a href="/index.html" class="nav_links" target="_blank">Inicio</a>
                     </li>
                     <li class="nav_items">
-                        <a href="/destinations.html" class="nav_links">Destinos</a>
+                        <a href="/destinations.html" class="nav_links" target="_blank">Destinos</a>
                     </li>
                     <li class="nav_items">
-                        <a href="/packages.html" class="nav_links">Paquetes y Ofertas</a>
+                        <a href="/packages.html" class="nav_links" target="_blank">Paquetes y Ofertas</a>
                     </li>
                     <li class="nav_items">
                         <a href="/contact.html" class="nav_links">Contacto</a>
@@ -133,5 +137,6 @@
     </footer>
 
     <script src="/js/menu.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 </html>

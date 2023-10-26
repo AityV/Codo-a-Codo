@@ -19,15 +19,26 @@ body {
 
 .hero {
     width: 100%;
-    height: 25vh;
+    height: 32vh;
     /* min-height: 600px;
     max-height: 800px; */
     position: relative;
-    /* display: grid; */
-    /* grid-template-rows:100px 1fr; */
+    display: grid;
+    grid-template-rows:100px 1fr;
+    color: #fff;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32vh;
     background-image: linear-gradient(180deg, #0000008c 0%,#0000008c 100%), url('/img/hero.jpg');
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
 }
 
 
@@ -42,11 +53,11 @@ body {
 
 .nav_logo img {
     max-width: 160px;
-    max-height: 110px;
-    /* margin-top: 25px; */
-    display: grid;
+    display: block;
     align-content: center;
     overflow: hidden;
+    position: absolute;
+    top: 30px;
 }
 
 .nav_link {
@@ -280,7 +291,7 @@ main h1 {
 /* Media queries */
 
 @media (max-width: 800px) {
-    .nav_menu {
+      .nav_menu {
         display: block;
     }
 

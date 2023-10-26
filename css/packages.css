@@ -19,15 +19,26 @@ body {
 
 .hero {
     width: 100%;
-    height: 25vh;
+    height: 32vh;
     /* min-height: 600px;
     max-height: 800px; */
     position: relative;
-    /* display: grid; */
-    /* grid-template-rows:100px 1fr; */
+    display: grid;
+    grid-template-rows:100px 1fr;
+    color: #fff;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32vh;
     background-image: linear-gradient(180deg, #0000008c 0%,#0000008c 100%), url('/img/hero.jpg');
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
 }
 
 /* Nav */
@@ -41,10 +52,11 @@ body {
 
 .nav_logo img {
     max-width: 160px;
-    max-height: 110px;
-    /* margin-top: 25px;     */
     display: block;
+    align-content: center;
     overflow: hidden;
+    position: absolute;
+    top: 30px;
 }
 
 .nav_link {
@@ -296,8 +308,8 @@ body {
 .package_title {
     font-size: 50px;
     color: #001A49; 
-    padding-top: 80px;
-    padding-bottom: 20px;   
+    padding-top: 30px;
+    padding-bottom: 10px;   
 }
 
 .package_subtitle {
@@ -313,11 +325,10 @@ body {
 
 .package_table {
     padding-top: 30px;
-    padding-bottom: 30px; 
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    gap: 10em;
     row-gap: 1.5em;
     margin: 2rem;
     /* align-content: center;            */
@@ -556,6 +567,7 @@ body {
 /* Media queries */
 
 @media (max-width: 800px) {
+
     .nav_menu {
         display: block;
     }
@@ -625,6 +637,11 @@ body {
         font-size: 17px;     
     }
 
+    .package_table{
+        grid-template-columns: repeat(2, 0.5fr);
+        gap: 20px;
+    }
+
     .step_container {
         display: block;         
     }     
@@ -669,10 +686,28 @@ body {
         font-size: 1.8rem;
         padding-top: 35px;
     }
+
+    .about_promot{
+        margin-top: 40px;
+        margin-bottom: 5px;
+    }
    
+    .offers_title{
+        font-size: 2rem;
+    }
+
     .offers_body .offers_text {               
         width: 47%; 
     } 
+
+    .offers_container{
+        width: 1fr;
+        grid-template-columns: 30px 1.5fr 30px; 
+    }
+
+    .offers_arrow{
+        width: 90%;
+    }
 
     .offers_text h3 {
         font-size: 16px;
@@ -683,6 +718,16 @@ body {
         font-size: 14px;     
     }
     
+    .package_table{
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+        /* width: max-content; */
+        grid-template-columns: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .package_name {
         font-size: 1rem;
     }

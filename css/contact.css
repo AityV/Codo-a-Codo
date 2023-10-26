@@ -3,7 +3,6 @@
 :root{
     --padding-container:100px 0;
     --color-title: #001A49;
-
 }
 
 body {
@@ -135,7 +134,7 @@ body {
 
 #form {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	/* grid-template-columns: repeat(2, 1fr); */
 	/* grid-template-rows: auto auto; */
 	gap: 10px;
 	width: 70%;
@@ -155,6 +154,11 @@ input.input_form {
 	outline: none;
 	border: none;
 	flex-grow: 1;
+}
+
+input.error {
+    border: 1px solid #cf1616;
+    background-color: #FFD2D2;
 }
 
 div.input_container {
@@ -242,7 +246,18 @@ input#submit_button {
     color: #fff;
 }
 
+@media (max-width: 1200px) {
 
+    .form_subt{
+        margin-top: 90px;
+        margin-bottom: 30px ;
+    }
+
+    #map{
+        width: 60%;
+    }
+
+}
 
 @media (max-width: 800px) {
 	.nav_menu {
@@ -314,12 +329,17 @@ input#submit_button {
     }
 	
 	#form {
-		flex-direction: column;
+		/* flex-direction: column; */
         gap: 10px;
+        width: max-content;
 	}
 
     .form_subt{
         margin: 70px auto 20px ;
+    }
+
+    .form_subt p{
+        font-size: 0.7rem;
     }
 
     div.input_container {
@@ -333,7 +353,7 @@ input#submit_button {
 
 @media (max-width: 600px) {
 	.nav_logo img{
-        max-width: 140px;
+        display: none;
     }
     
     .footer_title {
@@ -353,23 +373,31 @@ input#submit_button {
 
     #form{
        width: 100%;
-       grid-template-rows: 1fr;
        margin-bottom: 10px;
+       grid-template-columns: 1fr;
     }
 
     label {
         text-align: center;
+        font-size: 0.8rem;
     }
 
     input.input_form{
         align-items: center;
         text-align: center;
+        font-size: 0.8rem;
+        height: 30px;
     }
 
     div.input_container{
         width: 80%;
         justify-content: center;
         margin: 0 auto 0 auto;
+        grid-column: 1;
+    }
+
+    .form_subt{
+        margin-top: 5px;
     }
 
     .form_subt p{
@@ -381,10 +409,22 @@ input#submit_button {
     input#submit_button{
         height: 35px;
         font-size: 0.9rem;
-        width: 70%;
-        margin: 0 auto 0 auto;
+        width: 80%;
+        margin: 10px auto 0 auto;
     }
 
+    #map{
+        width: 90%;
+        height: 250px;
+    }
+
+    .footer_title{
+        font-size: 1.3rem;
+    }
+
+    .footer_copyright{
+        font-size: 1rem;
+    }
 }
 
 /* Scrollbar */
